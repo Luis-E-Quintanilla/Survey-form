@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Baseball Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+    <h1 id="title">Baseball Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+<form id="survey-form">
+        <label for="name"id="name-label">Enter Your First Name:<input id="name" name="name" type="text" placeholder="Luis" required /></label>
+        <label for="number" id="number-label">Enter Your Age:<input id="number" name="number" type="number" min="13" max="120" placeholder="29" /></label>
+        <label for="email" id="email-label">Enter Your Email:<input id="email" name="email" type="email" placeholder="name@mail.com" required /></label>
+<label for="dropdown">How do you watch baseball?
+<select id="dropdown">
+<option value="">(select one)</option>
+            <option value="1">Sports Channels</option>
+            <option value="2">YouTube highlights</option>
+</select>
+</label>
+<legend>Which do you prefer?</legend>
+<label for="watch-from-home"><input id="watch-from-home" name="preffered-viewing" type="radio" value="home" checked class="inline">Watch from home</label>
+<label for="Go-to-live-event"><input id="Go-to-live-event" name="preffered-viewing" type="radio" value="live" class="inline">Go to live event</label>
+<label for="location"><input type="checkbox" value="1" class="inline">TicketMaster
+<input type="checkbox" value="2" class="inline">Donkey Kong
+<input type="checkbox" value="3" class="inline">Trap House
+<input type="checkbox" value="4" class="inline">Scalpers
+</label>
+
+<label for="comments">Tell what you like most about baseball!<textarea id="comments" name="comments" rows="3" cols="30" placeholder="I love balls!"></textarea>
+<input id="submit" type="submit" value="Submit"></input>
+</form>
+</body>
